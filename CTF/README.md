@@ -1,15 +1,19 @@
-# Basic Sample Hardhat Project
+First Capture the Flag Challenge
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+```solidity
+//SPDX-License-Identifier: Unlicense
+pragma solidity ^0.8.0;
 
-Try running some of the following tasks:
+interface Flag {
+    function mint(address) external;
+}
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+contract Contract {
+    address constant flag = 0x16aAA5361F3E29F8e3BbCA64472d39399E303d1F;
+
+    function capture() external {
+        require(msg.sender != tx.origin, "msg.sender is equal to tx.origin");
+        Flag(flag).mint(tx.origin);
+    }
+}
 ```
