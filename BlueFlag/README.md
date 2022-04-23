@@ -1,4 +1,4 @@
-Second  Capture the Flag Challenge
+# Capture the blue flag challenge
 
 ```solidity
 //SPDX-License-Identifier: Unlicense

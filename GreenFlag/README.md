@@ -1,4 +1,4 @@
-# Capture the <span style="color:green">green</span> flag challenge
+# Capture the green flag challenge
 
 ```solidity
 //SPDX-License-Identifier: Unlicense

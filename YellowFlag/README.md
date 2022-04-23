@@ -1,4 +1,4 @@
-First Capture the Flag Challenge
+# Capture the yellow flag challenge
 
 ```solidity
 //SPDX-License-Identifier: Unlicense
