@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "devenv": "^1.0.1",
+    "dotenv": "^16.0.0",
+    "hardhat": "^2.9.3"
+  }
+}
